@@ -13,6 +13,7 @@ html, body {
     text-align: center;
 }
 
+/* HEADER */
 header { padding: 30px 15px 5px; }
 
 header h1 {
@@ -24,6 +25,7 @@ header h1 {
     -webkit-text-fill-color: transparent;
 }
 
+/* NAV */
 nav { margin: 18px 0; }
 
 nav button {
@@ -38,17 +40,20 @@ nav button {
     font-weight: bold;
 }
 
+/* SECTIONS */
 .section {
     display: none;
     padding: 40px 20px;
 }
 
+/* CENTER CONTENT */
 .content-box {
     max-width: 900px;
     margin: auto;
     text-align: left;
 }
 
+/* HOME LOGO FIX */
 #home {
     height: 65vh;
     background-color: white;
@@ -63,6 +68,12 @@ nav button {
     height: auto;
 }
 
+/* WORK SECTION */
+#work {
+    background: white;
+    color: black;
+}
+
 #work h2 {
     font-size: 38px;
     text-align: center;
@@ -75,8 +86,10 @@ nav button {
     margin-bottom: 18px;
 }
 
+/* INSTRUCTIONS */
 #instructions {
     background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    color: black;
 }
 
 #instructions h2 {
@@ -91,6 +104,7 @@ nav button {
     margin-bottom: 16px;
 }
 
+/* APPLY */
 #apply {
     background: linear-gradient(135deg, #1565c0, #42a5f5);
     color: white;
@@ -120,18 +134,18 @@ window.onload = () => showSection("home");
 </nav>
 
 <div id="home" class="section">
-    <img src="wbd-logo.jpg" alt="WBD Logo">
+    <img src="wbd-logo.jpg.jpeg" alt="WBD Logo">
 </div>
 
 <div id="work" class="section">
   <div class="content-box">
     <h2>Available Work & Responsibilities</h2>
-    <p><b>Computer Operator:</b> Manage computer systems and records.</p>
-    <p><b>Management Trainee:</b> Assist management and planning tasks.</p>
-    <p><b>Sales Executive:</b> Deal with clients and achieve targets.</p>
-    <p><b>Data Entry Operator:</b> Enter and update company data.</p>
-    <p><b>Receptionist:</b> Manage front desk and calls.</p>
-    <p><b>Customer Service Representative:</b> Handle customer queries.</p>
+    <p><b>Computer Operator:</b> Manage computer systems, handle office software, and maintain digital records.</p>
+    <p><b>Management Trainee:</b> Assist management, learn operations, and support planning tasks.</p>
+    <p><b>Sales Executive:</b> Communicate with clients, promote services, and achieve sales targets.</p>
+    <p><b>Data Entry Operator:</b> Enter and update company data accurately.</p>
+    <p><b>Receptionist:</b> Manage front desk, visitors, and calls professionally.</p>
+    <p><b>Customer Service Representative:</b> Handle customer queries and provide support.</p>
   </div>
 </div>
 
@@ -139,10 +153,10 @@ window.onload = () => showSection("home");
   <div class="content-box">
     <h2>Important Instructions</h2>
     <ul>
-        <li>Provide correct information.</li>
-        <li>Bring original documents at interview.</li>
-        <li>Only shortlisted candidates contacted.</li>
-        <li>Office timing: 8 AM to 5 PM.</li>
+        <li>Applicants must provide correct and complete information.</li>
+        <li>Bring original documents at interview time.</li>
+        <li>Only shortlisted candidates will be contacted.</li>
+        <li>Office timing is 8 AM to 5 PM.</li>
         <li>Company can reject any application.</li>
     </ul>
   </div>
@@ -151,13 +165,11 @@ window.onload = () => showSection("home");
 <div id="apply" class="section">
   <div class="content-box" style="text-align:center;">
     <h2>Apply Online</h2>
-
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKkepoP8kywNRpvPVLmyAYpFMSVipTZnDrqV9oo_rUNAYF0A/viewform?usp=dialog" target="_blank">
         <button style="background:white;color:#1565c0;padding:15px 35px;border:none;border-radius:30px;font-size:18px;font-weight:bold;">
             Open Application Form
         </button>
     </a>
-
   </div>
 </div>
 
