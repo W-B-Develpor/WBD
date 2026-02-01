@@ -1,116 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Apply for office work at Wealth Business Development. Submit your application online for various positions." />
-    <title>Wealth Business Development</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GBSP</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f2f4f7;
-        }
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
 
-        header {
-            background: #002147;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
+/* HEADER */
+header { padding: 30px 15px 5px; }
 
-        section {
-            background: white;
-            margin: 25px auto;
-            padding: 30px;
-            border-radius: 10px;
-            max-width: 1000px;
-        }
+header h1 {
+    font-size: 44px;
+    margin: 0;
+    font-weight: bold;
+    background: linear-gradient(90deg, #0b7a3e, #1e88e5, #0b7a3e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-        h2 {
-            color: #002147;
-            margin-top: 0;
-        }
+/* NAV */
+nav { margin: 18px 0; }
 
-        p {
-            line-height: 1.7;
-            font-size: 1.05em;
-        }
+nav button {
+    background: linear-gradient(45deg, #2196f3, #21cbf3);
+    color: white;
+    border: none;
+    padding: 12px 26px;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
 
-        ul {
-            line-height: 1.8;
-            padding-left: 22px;
-            font-size: 1.05em;
-        }
+/* SECTIONS */
+.section {
+    display: none;
+    padding: 40px 20px;
+}
 
-        ul li {
-            margin-bottom: 12px;
-        }
+/* CENTER CONTENT */
+.content-box {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+}
 
-        iframe {
-            width: 100%;
-            height: 80vh;
-            border: none;
-            border-radius: 10px;
-        }
+/* HOME LOGO FIX */
+#home {
+    height: 65vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        footer {
-            background: #002147;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 0.95em;
-        }
+#home img {
+    width: 70%;
+    max-width: 750px;
+    height: auto;
+}
 
-        .job-section {
-            padding: 45px 40px;
-            background: #f0f6ff;
-            border-left: 10px solid #004080;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-            border-radius: 14px;
-        }
-    </style>
+/* WORK SECTION */
+#work {
+    background: white;
+    color: black;
+}
+
+#work h2 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#work p {
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 18px;
+}
+
+/* INSTRUCTIONS */
+#instructions {
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    color: black;
+}
+
+#instructions h2 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#instructions li {
+    font-size: 22px;
+    line-height: 2.2;
+    margin-bottom: 16px;
+}
+
+/* APPLY */
+#apply {
+    background: linear-gradient(135deg, #1565c0, #42a5f5);
+    color: white;
+}
+</style>
+
+<script>
+function showSection(id) {
+    document.querySelectorAll(".section").forEach(s => s.style.display="none");
+    document.getElementById(id).style.display="block";
+}
+window.onload = () => showSection("home");
+</script>
 </head>
+
 <body>
 
 <header>
     <h1>Wealth Business Development</h1>
-    <p>Office Work Opportunities</p>
 </header>
 
-<section class="job-section">
-    <h2>Work Opportunities at Wealth Business Development</h2>
-    <p>
-        We are offering multiple office work vacancies. Interested candidates are encouraged to apply online.
-    </p>
+<nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('work')">Work</button>
+    <button onclick="showSection('instructions')">Instructions</button>
+    <button onclick="showSection('apply')">Apply</button>
+</nav>
 
+<div id="home" class="section">
+    <img src="wbd-logo.jpg.jpeg" alt="WBD Logo">
+</div>
+
+<div id="work" class="section">
+  <div class="content-box">
+    <h2>Available Work & Responsibilities</h2>
+    <p><b>Computer Operator:</b> Manage computer systems, handle office software, and maintain digital records.</p>
+    <p><b>Management Trainee:</b> Assist management, learn operations, and support planning tasks.</p>
+    <p><b>Sales Executive:</b> Communicate with clients, promote services, and achieve sales targets.</p>
+    <p><b>Data Entry Operator:</b> Enter and update company data accurately.</p>
+    <p><b>Receptionist:</b> Manage front desk, visitors, and calls professionally.</p>
+    <p><b>Customer Service Representative:</b> Handle customer queries and provide support.</p>
+  </div>
+</div>
+
+<div id="instructions" class="section">
+  <div class="content-box">
+    <h2>Important Instructions</h2>
     <ul>
-        <li><strong>Computer Operator</strong></li>
-        <li><strong>Management Trainee</strong></li>
-        <li><strong>Sales Executive</strong></li>
-        <li><strong>Data Entry Operator</strong></li>
-        <li><strong>Receptionist</strong></li>
-        <li><strong>Customer Service Representative</strong></li>
+        <li>Applicants must provide correct and complete information.</li>
+        <li>Bring original documents at interview time.</li>
+        <li>Only shortlisted candidates will be contacted.</li>
+        <li>Office timing is 8 AM to 5 PM.</li>
+        <li>Company can reject any application.</li>
     </ul>
-</section>
+  </div>
+</div>
 
-<section>
+<div id="apply" class="section">
+  <div class="content-box" style="text-align:center;">
     <h2>Apply Online</h2>
-
-    <!-- Google Form Embed with Apply Source = WBD -->
-    <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdKkepoP8kywNRpvPVLmyAYpFMSVipTZnDrqV9oo_rUNAYF0A/viewform?usp=pp_url&entry.1037781348=WBD&embedded=true"
-        loading="lazy"
-        aria-label="Job Application Form">
-    </iframe>
-</section>
-
-<footer>
-    <p>© 2026 Wellness Business Development. All Rights Reserved.</p>
-</footer>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSed0tabSIa1eJk8RAKlGNLMx3txhjDr6QNgRUdYx1-BpyRIQA/viewform" target="_blank">
+        <button style="background:white;color:#1565c0;padding:15px 35px;border:none;border-radius:30px;font-size:18px;font-weight:bold;">
+            Open Application Form
+        </button>
+    </a>
+  </div>
+</div>
 
 </body>
 </html>
-
-
